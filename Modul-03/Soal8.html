@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Form Pendaftaran Kursus </title>
+    </head>
+    <body>
+        <table border="1" width="400" bgcolor="lightblue">
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="red" size="5"><b>Pendaftaran Kursus</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Data Diri</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Nim</td>
+                <td><input type="text" name="nim"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="L"> Laki-laki
+                    <br>
+                    <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih Program Kursus</td>
+                <td>
+                    <input type="checkbox" name="program_1" value="csharp"> C#
+                    <br>
+                    <input type="checkbox" name="program_2" value="java"> Java
+                    <br>
+                    <input type="checkbox" name="program_3" value="sql"> SQL
+                    <br>
+                    <input type="checkbox" name="program_4" value="html"> HTML dan PHP
+                </td>
+            </tr>
+            <tr>
+                <td>Pilihan Hari/Jam Kursus</td>
+                <td>
+                    <select name="jadwal">
+                        <option value="sn_rb"> Senin - Rabu/09.00 - 11.00 </option>
+                        <option value="sl_km"> Selasa - Kamis/13.00 - 15.00 </option>
+                        <option value="jm"> Jumat/16.00 - 18.00 </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="salmon">
+                    Komentar Anda
+                    <br>
+                    <textarea name="komentar" cols="45" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
